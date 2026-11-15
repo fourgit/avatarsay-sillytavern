@@ -1,0 +1,120 @@
+.avatarsay-st-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.avatarsay-st-note {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.avatarsay-st-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .avatarsay-st-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.avatarsay-st-grid label,
+.avatarsay-st-section label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.88em;
+}
+
+.avatarsay-st-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.avatarsay-st-row .menu_button {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.avatarsay-st-status {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.14);
+  font-size: 0.86em;
+}
+
+.avatarsay-st-status.is-error {
+  background: rgba(220, 38, 38, 0.2);
+  color: #fca5a5;
+}
+
+.avatarsay-st-card {
+  border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.18));
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avatarsay-st-sub {
+  font-size: 0.84em;
+  opacity: 0.8;
+}
+
+.avatarsay-st-desc {
+  font-size: 0.88em;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avatarsay-st-audio {
+  width: 100%;
+  height: 32px;
+}
+
+.avatarsay-st-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.avatarsay-st-bark-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+.avatarsay-st-link {
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+.avatarsay-st-portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.avatarsay-st-portrait-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avatarsay-st-portrait-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
